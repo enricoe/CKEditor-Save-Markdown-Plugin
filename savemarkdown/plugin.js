@@ -57,7 +57,17 @@
 							}
 
 							body.appendChild(form_copy); // Append The Copied Form to Body
-							form_copy.submit(); // Submit The Copied Form
+
+                            // Submit The Copied Form
+                            try {
+                                form_copy.submit();
+                            } catch ( e ) {
+                                // If there's a button named "submit" then the form.submit
+                                // function is masked and can't be called in IE/FF, so we
+                                // call the click() method of that button.
+                                if ( form_copy.submit.click )
+                                    form_copy.submit.click();
+                            }
 
 						}
 
