@@ -23,19 +23,19 @@ CKEDITOR.editorConfig = function( config ) {
 	config.toolbar = [
 	        //Some Toolbar Objects ...
 	        '/',
-            {
-              name: 'document',
-              items: [
-                'Source',
-                '-',
-                'Save',
-                '-',
-                'SaveMarkdown', //The Button Position of SaveMarkdown Plugin
-                '-',
-                'Print'
-              ]
-            },
-            '/',
+                {
+                  name: 'document',
+                  items: [
+                    'Source',
+                    '-',
+                    'Save',
+                    '-',
+                    'SaveMarkdown', //The Button Position of SaveMarkdown Plugin
+                    '-',
+                    'Print'
+                  ]
+                },
+                '/',
 	        //Some Toolbar Objects ...
         ];
 
